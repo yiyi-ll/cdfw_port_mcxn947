@@ -1,0 +1,76 @@
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor and local workspace settings
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+*.swo
+*.tmp
+*.bak
+*~
+
+# CMake build trees and generated metadata
+build/
+out/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+Testing/
+_deps/
+CMakeUserPresets.json
+
+# Compiler, linker, and coverage outputs
+*.o
+*.obj
+*.d
+*.dep
+*.su
+*.a
+*.lib
+*.elf
+*.axf
+*.out
+*.hex
+*.bin
+*.srec
+*.s19
+*.map
+*.lst
+*.sym
+*.gcda
+*.gcno
+*.gcov
+*.lcov
+coverage/
+
+# MCUXpresso local state and generated build output
+**/.metadata/
+**/Debug/
+**/Release/
+**/debug/
+**/release/
+
+# Test and scripting caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+
+# Local logs and crash dumps
+*.log
+*.stackdump
+core
+core.*
+
+# Keep reproducible MCUXpresso project inputs under version control:
+# - .project, .cproject, and .settings
+# - SDK/config-tool inputs such as *.mex
+# - linker scripts and board configuration
+# - generated source required for a reproducible build
