@@ -3,8 +3,8 @@
 Thumbs.db
 Desktop.ini
 
-# Editor and local workspace settings
-.vscode/
+# Editor-local workspace settings
+# Keep .vscode because MCUXpresso stores portable build/debug project files there.
 .idea/
 *.code-workspace
 *.swp
@@ -57,6 +57,10 @@ coverage/
 **/debug/
 **/release/
 
+# MCUXpresso local SDK workspace junction and generated Kconfig trace.
+**/__repo__/
+**/Kconfig.trace
+
 # Test and scripting caches
 __pycache__/
 *.py[cod]
@@ -70,6 +74,7 @@ core
 core.*
 
 # Keep reproducible MCUXpresso project inputs under version control:
+# - .vscode project settings, CMake presets, tasks, and launch configurations
 # - .project, .cproject, and .settings
 # - SDK/config-tool inputs such as *.mex
 # - linker scripts and board configuration
